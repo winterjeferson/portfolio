@@ -995,3 +995,6 @@
     background-color: white; }
   [class*="color--"].color--white-darken-15 {
     background-color: #404040; }
+
+* {
+  opacity: .7; }

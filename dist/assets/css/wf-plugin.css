@@ -1972,6 +1972,24 @@ small {
   .progress--yellow .progress__bar {
     background-color: #f1c50e; }
 
+.container {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin: auto;
+  max-width: 100%;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 728px; } }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 984px; } }
+  @media (min-width: 1366px) {
+    .container {
+      max-width: 1326px; } }
+
 .scrollbar::-webkit-scrollbar {
   width: 10px; }
 

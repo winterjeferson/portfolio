@@ -1,0 +1,23 @@
+$padding: 40;
+
+.container {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+
+    @include tablet {
+        max-width: $break-point-tablet - $padding;
+    }
+
+    @include tablet-landscape {
+        max-width: $break-point-tablet-landscape - $padding;
+    }
+
+    @include notebook {
+        max-width: $break-point-notebook - $padding;
+    }
+}
