@@ -1,0 +1,101 @@
+audio[controls],
+canvas,
+video {
+    display: inline-block;
+    zoom: 1;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: $font-size-regular;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    vertical-align: top;
+}
+
+table,
+table td {
+    border-collapse: collapse;
+}
+
+img {
+    align-self: start;
+    max-width: 100%;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0.5em auto;
+}
+
+p {
+    line-height: 150%;
+    margin-bottom: $regular;
+}
+
+small {
+    font-size: $font-size-small;
+}

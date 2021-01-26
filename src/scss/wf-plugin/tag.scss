@@ -1,0 +1,102 @@
+.tag-wrapper {
+    @extend %extend-component-margin;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+.tag {
+    align-items: center;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .button,
+    &__text {
+        align-items: center;
+        display: inline-flex;
+    }
+
+    .button__close {
+        padding-right: 0;
+    }
+
+    &--extra-small {
+        $size: $extra-small;
+        margin: $size;
+        padding: $size ($size * 3);
+
+        .tag__text {
+            font-size: $font-size-extra-small;
+        }
+    }
+
+    &--small {
+        $size: $small;
+        margin: $size;
+        padding: $size ($size * 3);
+
+        .tag__text {
+            font-size: $font-size-small;
+        }
+    }
+
+    &--regular {
+        $size: $regular;
+        margin: $size;
+        padding: $size ($size * 3);
+
+        .tag__text {
+            font-size: $font-size-regular;
+        }
+    }
+
+    &--big {
+        $size: $big;
+        border-radius: $size * 3;
+        margin: $size;
+        padding: $size ($size * 3);
+
+        .tag__text {
+            font-size: $font-size-big;
+        }
+    }
+
+    &--extra-big {
+        $size: $extra-big;
+        border-radius: $size * 3;
+        margin: $size;
+        padding: $size ($size * 3);
+
+        .tag__text {
+            font-size: $font-size-extra-big;
+        }
+    }
+}
+
+@each $color in $arrColorTag {
+    .tag--#{$color} {
+        @extend %extend-border-default;
+        background-color: color-extra-light(#{$color});
+        border-color: color-extra-light-border(#{$color});
+        color: color-dark(#{$color});
+
+        .link {
+            color: color-dark(#{$color}) !important;
+
+            &:hover,
+            &:link,
+            &:focus,
+            &.active {
+                color: color-dark(#{$color});
+            }
+        }
+
+        .button {
+
+            .icon {
+                fill: color-regular(#{$color});
+            }
+        }
+    }
+}

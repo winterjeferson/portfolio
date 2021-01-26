@@ -1,0 +1,492 @@
+.button,
+.button-outline,
+.link {
+    cursor: pointer;
+    display: inline-flex;
+    height: fit-content;
+    transition: $transition;
+    user-select: none;
+
+    &--extra-small {
+        font-size: $font-size-extra-small;
+    }
+
+    &--small {
+        font-size: $font-size-small;
+    }
+
+    &--regular {
+        font-size: $font-size-regular;
+    }
+
+    &--big {
+        font-size: $font-size-big;
+    }
+
+    &--extra-big {
+        font-size: $font-size-extra-big;
+    }
+
+    .icon {
+        font-size: 0.87em;
+    }
+}
+
+.button {
+    border-width: $border-width;
+
+    &--extra-small {
+        border-radius: $border-radius-extra-small;
+    }
+
+    &--small {
+        border-radius: $border-radius-small;
+    }
+
+    &--regular {
+        border-radius: $border-radius-regular;
+    }
+
+    &--big {
+        border-radius: $border-radius-big;
+    }
+
+    &--extra-big {
+        border-radius: $border-radius-extra-big;
+    }
+
+    @each $color in $arrColorButton {
+        &--#{$color} {
+            background-color: color-regular(#{$color});
+            border-color: color-regular-border(#{$color});
+            color: color-regular-contrast(#{$color});
+
+            .icon {
+                fill: color-regular-contrast(#{$color});
+            }
+
+            &:hover {
+                background-color: color-dark(#{$color});
+                border-color: color-dark-border(#{$color});
+                color: color-regular-contrast(#{$color});
+
+                .icon {
+                    fill: color-regular-contrast(#{$color});
+                }
+            }
+
+            &:focus {
+                background-color: color-dark(#{$color});
+                box-shadow: 0 0 0 4px rgba(color-regular-border(#{$color}), .5);
+            }
+
+            &--active {
+                background-color: color-dark(#{$color});
+
+                .icon {
+                    fill: color-dark(#{$color});
+                }
+            }
+
+            &--disabled,
+            &:disabled {
+                background-color: color-light(#{$color});
+                border-color: color-light(#{$color});
+            }
+
+            &--active,
+            &--disabled,
+            &:disabled {
+                @extend %extend-disabled;
+            }
+        }
+    }
+}
+
+.button-outline {
+    background-color: transparent;
+    border-width: $border-width * 2;
+
+    &--extra-small,
+    &--small,
+    &--regular,
+    &--big,
+    &--extra-big {
+        border-radius: 0;
+    }
+
+    @each $color in $arrColorButton {
+        &--#{$color} {
+            border-color: color-regular-border(#{$color});
+            color: color-regular(#{$color});
+
+            .icon {
+                fill: color-regular-contrast(#{$color});
+            }
+
+            &:hover {
+                background-color: color-regular(#{$color});
+                border-color: color-regular(#{$color});
+                color: color-regular-contrast(#{$color});
+
+                .icon {
+                    fill: color-regular-contrast(#{$color});
+                }
+            }
+
+            &--active {
+                background-color: color-dark(#{$color});
+
+                .icon {
+                    fill: color-dark(#{$color});
+                }
+            }
+
+            &--disabled,
+            &:disabled {
+                border-color: color-light(#{$color});
+            }
+
+            &--active,
+            &--disabled,
+            &:disabled {
+                @extend %extend-disabled;
+            }
+        }
+    }
+}
+
+
+.button,
+.button-outline {
+    border-style: solid;
+    text-decoration: none;
+
+    &--extra-small {
+        padding: $extra-small $small;
+
+        &--proportional {
+            padding: $extra-small;
+        }
+    }
+
+    &--small {
+        padding: $small $regular;
+
+        &--proportional {
+            padding: $small;
+        }
+    }
+
+    &--regular {
+        padding: $regular $big;
+
+        &--proportional {
+            padding: $regular;
+        }
+    }
+
+    &--big {
+        padding: $big $extra-big;
+
+        &--proportional {
+            padding: $big;
+        }
+    }
+
+    &--extra-big {
+        padding: $extra-big $extra-big-2;
+
+        &--proportional {
+            padding: $extra-big;
+        }
+    }
+
+    &--transparent {
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+.link {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @each $color in $arrColorButton {
+        &--#{$color} {
+            color: color-regular(#{$color});
+
+            .icon {
+                fill: color-regular-contrast(#{$color});
+            }
+
+            &:hover {
+                color: color-dark(#{$color});
+
+                .icon {
+                    fill: color-regular-contrast(#{$color});
+                }
+            }
+        }
+    }
+}
+
+.drop-down-text,
+.drop-down {
+
+    >.button,
+    >.button-outline,
+    >.link {
+        @each $color in $arrColorButton {
+            &--#{$color} {
+                &:after {
+                    @include triangle(color-regular-contrast(#{$color}), down, $size: $small, $position: relative, $round: false);
+                }
+            }
+        }
+
+        &:after {
+            align-self: center;
+            content: '';
+            display: inline-flex;
+            height: 100%;
+            margin-left: $small;
+            margin-top: 1px;
+        }
+    }
+
+    .drop-down__content {
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        position: absolute;
+        transition: $transition;
+        z-index: z-index("drop-down");
+
+        &--opened {
+            height: auto;
+            opacity: 1;
+            pointer-events: initial;
+        }
+
+        .button {
+            margin: 0;
+            margin-top: -$border-width;
+
+            &:not(:first-child):not(:last-child) {
+                border-radius: 0;
+            }
+
+            &:first-child {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                margin-top: -($border-width + 1);
+            }
+
+            &:last-child {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+
+        @each $color in $arrColorButton {
+            &--#{$color} {
+                border-color: $color-grey;
+            }
+        }
+    }
+}
+
+.button-wrapper {
+    align-items: center;
+
+    .button,
+    .button-outline,
+    .drop-down,
+    .link {
+        margin: $extra-small;
+    }
+
+    &.column {
+
+        .button,
+        .button-outline,
+        .drop-down,
+        .link {
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.row {
+
+        .button,
+        .button-outline,
+        .drop-down,
+        .link {
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.button-group {
+    $button: button;
+    $button-outline: button-outline;
+    $drop-down: drop-down;
+
+    margin: $regular auto;
+
+    .button,
+    .drop-down,
+    .button-outline {
+        margin-left: -$border-width;
+    }
+
+    >.button,
+    >.drop-down>.button,
+    >.button-outline {
+        border-radius: 0;
+    }
+
+    >:first-child {
+        &.#{$button}--extra-small {
+            border-bottom-left-radius: $border-radius-extra-small;
+            border-top-left-radius: $border-radius-extra-small;
+        }
+
+        &.#{$button}--small {
+            border-bottom-left-radius: $border-radius-small;
+            border-top-left-radius: $border-radius-small;
+        }
+
+        &.#{$button}--regular {
+            border-bottom-left-radius: $border-radius-regular;
+            border-top-left-radius: $border-radius-regular;
+        }
+
+        &.#{$button}--big {
+            border-bottom-left-radius: $border-radius-big;
+            border-top-left-radius: $border-radius-big;
+        }
+
+        &.#{$button}--extra-big {
+            border-bottom-left-radius: $border-radius-extra-big;
+            border-top-left-radius: $border-radius-extra-big;
+        }
+
+        >.button {
+            &.#{$button}--extra-small {
+                border-bottom-left-radius: $border-radius-extra-small;
+                border-top-left-radius: $border-radius-extra-small;
+            }
+
+            &.#{$button}--small {
+                border-bottom-left-radius: $border-radius-small;
+                border-top-left-radius: $border-radius-small;
+            }
+
+            &.#{$button}--regular {
+                border-bottom-left-radius: $border-radius-regular;
+                border-top-left-radius: $border-radius-regular;
+            }
+
+            &.#{$button}--big {
+                border-bottom-left-radius: $border-radius-big;
+                border-top-left-radius: $border-radius-big;
+            }
+
+            &.#{$button}--extra-big {
+                border-bottom-left-radius: $border-radius-extra-big;
+                border-top-left-radius: $border-radius-extra-big;
+            }
+        }
+    }
+
+    >:last-child {
+        &.#{$button}--extra-small {
+            border-bottom-right-radius: $border-radius-extra-small;
+            border-top-right-radius: $border-radius-extra-small;
+        }
+
+        &.#{$button}--small {
+            border-bottom-right-radius: $border-radius-small;
+            border-top-right-radius: $border-radius-small;
+        }
+
+        &.#{$button}--regular {
+            border-bottom-right-radius: $border-radius-regular;
+            border-top-right-radius: $border-radius-regular;
+        }
+
+        &.#{$button}--big {
+            border-bottom-right-radius: $border-radius-big;
+            border-top-right-radius: $border-radius-big;
+        }
+
+        &.#{$button}--extra-big {
+            border-bottom-right-radius: $border-radius-extra-big;
+            border-top-right-radius: $border-radius-extra-big;
+        }
+    }
+}
+
+
+.navigation-change {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .button {
+        background-color: transparent;
+        border-color: transparent;
+        position: absolute;
+
+        &:first-child {
+            left: 0;
+        }
+
+        &:last-child {
+            right: 0;
+        }
+    }
+}
+
+.toggle-menu {
+    display: flex;
+    margin-bottom: $regular;
+
+    @include tablet-landscape {
+        display: none;
+    }
+}
+
+.toggle-menu__content {
+    display: none;
+
+    @include tablet-landscape {
+        display: flex;
+    }
+}

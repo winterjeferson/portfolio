@@ -1,0 +1,27 @@
+{% from 'include/template-nunjucks.html' import arrSize, arrColor %}
+{% include "include/head.html" %}
+{% set arrStyle = [
+    'loading-1',
+    'loading-2'
+    ] %}
+
+<h1 class="page__title">Loading</h1>
+{% for style in arrStyle %}
+{% for size in arrSize %}
+<div class="row center card-wrapper">
+    {% for color in arrColor %}
+    <div class="card card--extra-small card--grey">
+        <article class="card__body">
+            <div class="row center">
+                <div class="loading {{style}} {{style}}--{{size}} {{style}}--{{color}} animate"></div>
+            </div>
+        </article>
+        <footer class="card__footer">
+            <small>{{style}} <br/> {{size}}</small>
+        </footer>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+{% endfor %}
+{% include "include/footer.html" %}

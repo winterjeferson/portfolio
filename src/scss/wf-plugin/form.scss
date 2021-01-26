@@ -1,0 +1,64 @@
+$prefix: 'form';
+
+.form {
+
+    &__field {
+        align-items: center;
+        display: flex;
+        margin-bottom: $regular;
+    }
+
+    &__label {
+        font-weight: bold;
+        margin-bottom: $regular;
+        width: 100%;
+    }
+
+    &__fill {
+        @extend %extend-border-default;
+        border-radius: $border-radius-regular;
+        padding: $regular;
+        width: 100%;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"],
+    &__fill {
+        transition: $transition;
+    }
+
+    &__option {
+        margin-right: $big;
+    }
+
+    select[multiple],
+    textarea {
+        height: 100px;
+    }
+
+    .column {
+        align-items: flex-start;
+        flex: 1;
+        @extend %extend-component-margin;
+    }
+
+    @each $color in $arrColorButton {
+        &--#{$color} {
+
+            input[type="checkbox"],
+            input[type="radio"] {
+                &:focus {
+                    box-shadow: 0 0 0 4px rgba(color-light-border(#{$color}), .7);
+                }
+            }
+
+            .#{$prefix}__fill {
+                border-color: color-light-border(#{$color});
+
+                &:focus {
+                    box-shadow: 0 0 0 4px rgba(color-light-border(#{$color}), .7);
+                }
+            }
+        }
+    }
+}

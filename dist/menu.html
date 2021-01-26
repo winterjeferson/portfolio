@@ -1,0 +1,1935 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=5,user-scalable=yes,width=device-width">
+    <meta name="description" content="Description" />
+    <meta name="author" content="Jeferson Winter" />
+    <meta name="keywords" content="framework, frontend, html, css, javascript" />
+    <title>Winter Front</title>
+
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="./assets/img/logo/144-144.png" />
+    <meta name="application-name" content="Jeferson Winter" />
+    <link rel="shortcut icon" href="./assets/img/logo/16-16.png" />
+    <link rel="apple-touch-icon" href="./assets/img/logo/57-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/logo/72-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/logo/114-114.png" />
+
+    <meta property="og:image" content="./assets/img/logo/600-315.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Winter Front" />
+    <meta property="og:site_name" content="Winter Front" />
+    <meta property="og:description" content="Description" />
+
+    <link href="./assets/css/wf-plugin.css" rel="stylesheet">
+    <link href="./assets/css/wf-theme.css" rel="stylesheet">
+
+    <script>
+        const globalLanguage = "pt";
+    </script>
+</head>
+
+<body>
+    <main class="grid">
+        <div class="loading-main row center">
+    <div class="loading loading-1 loading-1--big loading-1--white animate"></div>
+</div>
+        <header class="grid__header">
+            <div class="row theme-header">
+    <a href="index.html" class="button button--regular button--regular--proportional button--grey" aria-label="home">
+        <svg class="icon icon--regular icon--grey">
+            <use xlink:href="./assets/img/icon.svg#home"></use>
+        </svg>
+    </a>
+    <div class="theme-version">
+        v: 2.0.0
+        <a href="https://github.com/winterjeferson/winter-front" target="_blank" rel="noopener"
+            class="button button--regular button--green">
+            Download (Github)
+        </a>
+    </div>
+</div>
+        </header>
+        <aside class="grid__menu">
+            
+
+<div class="theme-menu button-wrapper">
+    <button type="button" class="button button--regular button--regular--proportional button--grey toggle-menu" aria-label="Menu">
+        <svg class="icon icon--regular">
+            <use xlink:href="./assets/img/icon.svg#menu"></use>
+        </svg>
+    </button>
+    <nav class="column toggle-menu__content">
+        
+        <a href="button.html" data-id="button" class="button button--small button--blue">
+            button
+        </a>
+        
+        <a href="card.html" data-id="card" class="button button--small button--blue">
+            card
+        </a>
+        
+        <a href="carousel.html" data-id="carousel" class="button button--small button--blue">
+            carousel
+        </a>
+        
+        <a href="error.html" data-id="error" class="button button--small button--blue">
+            error
+        </a>
+        
+        <a href="form.html" data-id="form" class="button button--small button--blue">
+            form
+        </a>
+        
+        <a href="gallery.html" data-id="gallery" class="button button--small button--blue">
+            gallery
+        </a>
+        
+        <a href="icon.html" data-id="icon" class="button button--small button--blue">
+            icon
+        </a>
+        
+        <a href="lazy-load.html" data-id="lazy-load" class="button button--small button--blue">
+            lazy-load
+        </a>
+        
+        <a href="loading.html" data-id="loading" class="button button--small button--blue">
+            loading
+        </a>
+        
+        <a href="menu.html" data-id="menu" class="button button--small button--blue">
+            menu
+        </a>
+        
+        <a href="modal.html" data-id="modal" class="button button--small button--blue">
+            modal
+        </a>
+        
+        <a href="notification.html" data-id="notification" class="button button--small button--blue">
+            notification
+        </a>
+        
+        <a href="palette.html" data-id="palette" class="button button--small button--blue">
+            palette
+        </a>
+        
+        <a href="progress.html" data-id="progress" class="button button--small button--blue">
+            progress
+        </a>
+        
+        <a href="scroll.html" data-id="scroll" class="button button--small button--blue">
+            scroll
+        </a>
+        
+        <a href="table.html" data-id="table" class="button button--small button--blue">
+            table
+        </a>
+        
+        <a href="tag.html" data-id="tag" class="button button--small button--blue">
+            tag
+        </a>
+        
+        <a href="text.html" data-id="text" class="button button--small button--blue">
+            text
+        </a>
+        
+        <a href="tooltip.html" data-id="tooltip" class="button button--small button--blue">
+            tooltip
+        </a>
+        
+    </nav>
+</div>
+        </aside>
+        <article class="grid__content page">
+<h1 class="page__title">Menu</h1>
+<h2 class="page__sub-title">Drop down</h2>
+<div class="row">
+    <div class="row center button-wrapper">
+        <div class="drop-down">
+            <a href="javascript:;" class="button button--regular button--grey">Button</a>
+            <div class="drop-down__content">
+                <a href="javascript:;" class="button button--regular button--white">Button</a>
+                <a href="javascript:;" class="button button--regular button--white">Drop down</a>
+                <a href="javascript:;" class="button button--regular button--white">Dolor sit amet</a>
+                <a href="javascript:;" class="button button--regular button--white">Consecttur adipscing elit</a>
+                <a href="javascript:;" class="button button--regular button--white">Lorem ipsum</a>
+                <a href="javascript:;" class="button button--regular button--white">Dolor sit amet</a>
+            </div>
+        </div>
+        <div class="drop-down">
+            <button type="button" class="button button--regular button--blue">Button</button>
+            <div class="drop-down__content">
+                <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+                <a href="javascript:;" class="button button--regular button--green">Drop down</a>
+                <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+                <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+            </div>
+        </div>
+        <button type="button" class="button button--regular button--blue" disabled>Disabled</button>
+        <button type="button" class="button button--regular button--blue">Button</button>
+    </div>
+    <div class="button-wrapper row center">
+        <div class="drop-down">
+            <a href="javascript:;" class="link link--regular link--blue">Drop Down</a>
+            <div class="drop-down__content">
+                <a href="javascript:;" class="link link--regular link--black">Dolor sit amet</a>
+                <a href="javascript:;" class="link link--regular link--black">Consecttur adipscing elit</a>
+                <a href="javascript:;" class="link link--regular link--blue">Dolor sit amet</a>
+                <a href="javascript:;" class="link link--regular link--black">Dolor sit amet</a>
+            </div>
+        </div>
+        <a href="javascript:;" class="link link--blue">Lorem</a>
+        <div class="drop-down">
+            <a href="javascript:;" class="link link--blue">Drop Down</a>
+            <div class="drop-down__content">
+                <a href="javascript:;" class="link link--black">Dolor sit amet</a>
+                <a href="javascript:;" class="link link--black">Consecttur adipscing elit</a>
+                <a href="javascript:;" class="link link--blue">Dolor sit amet</a>
+                <a href="javascript:;" class="link link--black">Dolor sit amet</a>
+            </div>
+        </div>
+        <a href="javascript:;" class="link link--blue">Ipsum</a>
+    </div>
+</div>
+<h2 class="page__sub-title">Tab</h2>
+
+<div class="button-wrapper row center tab tab--black ">
+    <a href="javascript:;" class="button button--regular button--black tab--active">
+        black
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--blue ">
+    <a href="javascript:;" class="button button--regular button--blue tab--active">
+        blue
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--brown ">
+    <a href="javascript:;" class="button button--regular button--brown tab--active">
+        brown
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--cyan ">
+    <a href="javascript:;" class="button button--regular button--cyan tab--active">
+        cyan
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--green ">
+    <a href="javascript:;" class="button button--regular button--green tab--active">
+        green
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--grey ">
+    <a href="javascript:;" class="button button--regular button--grey tab--active">
+        grey
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--orange ">
+    <a href="javascript:;" class="button button--regular button--orange tab--active">
+        orange
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--pink ">
+    <a href="javascript:;" class="button button--regular button--pink tab--active">
+        pink
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--purple ">
+    <a href="javascript:;" class="button button--regular button--purple tab--active">
+        purple
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--red ">
+    <a href="javascript:;" class="button button--regular button--red tab--active">
+        red
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--yellow ">
+    <a href="javascript:;" class="button button--regular button--yellow tab--active">
+        yellow
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="button-wrapper row center tab tab--white ">
+    <a href="javascript:;" class="button button--regular button--white tab--active">
+        white
+    </a>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--blue">Drop down</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Button</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="button button--regular button--green">
+        Button fixed color
+    </a>
+</div>
+
+<div class="row button-group center">
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--grey">Button</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--white">Button</a>
+            <a href="javascript:;" class="button button--regular button--white">Drop down</a>
+            <a href="javascript:;" class="button button--regular button--white">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--white">Consecttur adipscing elit</a>
+            <a href="javascript:;" class="button button--regular button--white">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--white">Dolor sit amet</a>
+        </div>
+    </div>
+    <button type="button" class="button button--regular button--blue">Button</button>
+    <button type="button" class="button button--regular button--blue">Button</button>
+    <button type="button" class="button button--regular button--blue">Button</button>
+    <div class="drop-down">
+        <a href="javascript:;" class="button button--regular button--grey">Button</a>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--white">Button</a>
+            <a href="javascript:;" class="button button--regular button--white">Drop down</a>
+            <a href="javascript:;" class="button button--regular button--white">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--white">Consecttur adipscing elit</a>
+            <a href="javascript:;" class="button button--regular button--white">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--white">Dolor sit amet</a>
+        </div>
+    </div>
+    <div class="drop-down">
+        <button type="button" class="button button--regular button--blue">Button</button>
+        <div class="drop-down__content">
+            <a href="javascript:;" class="button button--regular button--grey">Lorem ipsum</a>
+            <a href="javascript:;" class="button button--regular button--green">Drop down</a>
+            <a href="javascript:;" class="button button--regular button--grey">Dolor sit amet</a>
+            <a href="javascript:;" class="button button--regular button--grey">Consecttur adipscing elit</a>
+        </div>
+    </div>
+    <button type="button" class="button button--regular button--blue">Button</button>
+</div>
+
+
+<h2 class="page__sub-title">Pagination extra-small</h2>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--black" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--black" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--black">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--black">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--black button--black--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--black" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--black" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--blue" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--blue" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--blue">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--blue">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--blue button--blue--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--blue" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--blue" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--brown" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--brown" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--brown">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--brown">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--brown button--brown--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--brown" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--brown" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--cyan" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--cyan" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--cyan">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--cyan">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--cyan button--cyan--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--cyan" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--cyan" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--green" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--green" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--green">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--green">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--green button--green--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--green" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--green" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--grey" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--grey" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--grey">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--grey">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--grey button--grey--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--grey" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--grey" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--orange" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--orange" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--orange">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--orange">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--orange button--orange--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--orange" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--orange" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--pink" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--pink" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--pink">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--pink">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--pink button--pink--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--pink" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--pink" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--purple" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--purple" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--purple">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--purple">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--purple button--purple--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--purple" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--purple" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--red" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--red" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--red">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--red">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--red button--red--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--red" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--red" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--yellow" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--yellow" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--yellow">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--yellow">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--yellow button--yellow--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--yellow" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--yellow" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-small button--white" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--white" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--white">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--white">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--white button--white--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--white" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-small button--white" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+
+<h2 class="page__sub-title">Pagination small</h2>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--black" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--black" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--black">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--black">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--black button--black--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--black" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--black" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--blue" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--blue" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--blue">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--blue">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--blue button--blue--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--blue" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--blue" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--brown" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--brown" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--brown">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--brown">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--brown button--brown--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--brown" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--brown" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--cyan" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--cyan" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--cyan">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--cyan">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--cyan button--cyan--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--cyan" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--cyan" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--green" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--green" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--green">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--green">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--green button--green--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--green" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--green" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--grey" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--grey" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--grey">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--grey">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--grey button--grey--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--grey" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--grey" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--orange" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--orange" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--orange">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--orange">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--orange button--orange--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--orange" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--orange" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--pink" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--pink" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--pink">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--pink">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--pink button--pink--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--pink" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--pink" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--purple" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--purple" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--purple">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--purple">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--purple button--purple--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--purple" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--purple" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--red" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--red" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--red">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--red">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--red button--red--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--red" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--red" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--yellow" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--yellow" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--yellow">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--yellow">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--yellow button--yellow--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--yellow" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--yellow" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--small button--white" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--white" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--white">
+        1
+    </a>
+    <a href="javascript:;" class="button button--small button--white">
+        2
+    </a>
+    <a href="javascript:;" class="button button--small button--white button--white--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--small button--white" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--small button--white" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+
+<h2 class="page__sub-title">Pagination regular</h2>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--black" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--black" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--black">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--black">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--black button--black--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--black" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--black" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--blue" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--blue" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--blue">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--blue">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--blue button--blue--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--blue" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--blue" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--brown" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--brown" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--brown">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--brown">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--brown button--brown--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--brown" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--brown" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--cyan" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--cyan" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--cyan">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--cyan">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--cyan button--cyan--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--cyan" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--cyan" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--green" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--green" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--green">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--green">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--green button--green--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--green" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--green" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--grey" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--grey" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--grey">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--grey">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--grey button--grey--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--grey" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--grey" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--orange" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--orange" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--orange">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--orange">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--orange button--orange--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--orange" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--orange" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--pink" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--pink" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--pink">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--pink">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--pink button--pink--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--pink" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--pink" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--purple" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--purple" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--purple">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--purple">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--purple button--purple--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--purple" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--purple" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--red" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--red" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--red">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--red">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--red button--red--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--red" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--red" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--yellow" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--yellow" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--yellow">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--yellow">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--yellow button--yellow--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--yellow" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--yellow" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--regular button--white" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--white" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--white">
+        1
+    </a>
+    <a href="javascript:;" class="button button--regular button--white">
+        2
+    </a>
+    <a href="javascript:;" class="button button--regular button--white button--white--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--regular button--white" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--regular button--white" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+
+<h2 class="page__sub-title">Pagination big</h2>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--black" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--black" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--black">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--black">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--black button--black--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--black" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--black" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--blue" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--blue" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--blue">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--blue">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--blue button--blue--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--blue" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--blue" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--brown" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--brown" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--brown">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--brown">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--brown button--brown--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--brown" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--brown" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--cyan" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--cyan" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--cyan">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--cyan">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--cyan button--cyan--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--cyan" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--cyan" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--green" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--green" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--green">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--green">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--green button--green--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--green" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--green" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--grey" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--grey" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--grey">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--grey">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--grey button--grey--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--grey" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--grey" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--orange" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--orange" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--orange">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--orange">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--orange button--orange--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--orange" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--orange" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--pink" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--pink" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--pink">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--pink">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--pink button--pink--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--pink" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--pink" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--purple" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--purple" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--purple">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--purple">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--purple button--purple--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--purple" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--purple" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--red" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--red" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--red">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--red">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--red button--red--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--red" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--red" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--yellow" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--yellow" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--yellow">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--yellow">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--yellow button--yellow--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--yellow" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--yellow" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--big button--white" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--white" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--white">
+        1
+    </a>
+    <a href="javascript:;" class="button button--big button--white">
+        2
+    </a>
+    <a href="javascript:;" class="button button--big button--white button--white--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--big button--white" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--big button--white" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+
+<h2 class="page__sub-title">Pagination extra-big</h2>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--black" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--black" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--black">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--black">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--black button--black--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--black" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--black" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--blue" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--blue" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--blue">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--blue">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--blue button--blue--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--blue" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--blue" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--brown" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--brown" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--brown">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--brown">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--brown button--brown--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--brown" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--brown" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--cyan" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--cyan" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--cyan">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--cyan">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--cyan button--cyan--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--cyan" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--cyan" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--green" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--green" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--green">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--green">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--green button--green--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--green" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--green" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--grey" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--grey" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--grey">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--grey">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--grey button--grey--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--grey" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--grey" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--orange" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--orange" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--orange">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--orange">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--orange button--orange--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--orange" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--orange" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--pink" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--pink" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--pink">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--pink">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--pink button--pink--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--pink" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--pink" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--purple" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--purple" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--purple">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--purple">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--purple button--purple--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--purple" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--purple" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--red" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--red" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--red">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--red">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--red button--red--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--red" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--red" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--yellow" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--yellow" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--yellow">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--yellow">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--yellow button--yellow--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--yellow" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--yellow" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+<nav class="row button-group center">
+    <a href="javascript:;" class="button button--extra-big button--white" aria-label="first page">
+        <span class="icon" aria-hidden="true">&#10094;&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--white" aria-label="previous">
+        <span class="icon" aria-hidden="true">&#10094;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--white">
+        1
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--white">
+        2
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--white button--white--active">
+        3
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--white" aria-label="next">
+        <span class="icon" aria-hidden="true">&#10095;</span>
+    </a>
+    <a href="javascript:;" class="button button--extra-big button--white" aria-label="last page">
+        <span class="icon" aria-hidden="true">&#10095;&#10095;</span>
+    </a>
+</nav>
+
+
+        </article>
+        <footer class="grid__footer">
+            <div class="row theme-footer">
+    By:
+    <a href="https://www.jefersonwinter.com.br" target="_blank" rel="noopener" class="button button--regular button--grey">
+        Jeferson Winter
+    </a>
+</div>
+        </footer>
+
+        <script type="module">
+            import * as wfp from './assets/js/wf-plugin.js';
+            import * as wft from './assets/js/wf-theme.js';
+        </script>
+    </main>
+</body>
+
+</html>

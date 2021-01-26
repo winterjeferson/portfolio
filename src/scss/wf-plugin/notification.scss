@@ -1,0 +1,63 @@
+.notification {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: $regular;
+    text-align: right;
+
+    &__item {
+        align-items: center;
+        @extend %extend-border-default;
+        margin-bottom: $small;
+        width: auto;
+    }
+
+    .button,
+    &__text {
+        display: inline-flex;
+    }
+
+    &--extra-small {
+        border-radius: $border-radius-extra-small;
+        padding: $extra-small;
+    }
+
+    &--small {
+        border-radius: $border-radius-small;
+        padding: $small;
+    }
+
+    &--regular {
+        border-radius: $border-radius-regular;
+        padding: $regular;
+    }
+
+    &--big {
+        border-radius: $border-radius-big;
+        padding: $big;
+    }
+
+    &--extra-big {
+        border-radius: $border-radius-extra-big;
+        padding: $extra-big;
+    }
+
+    &--default {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: z-index("notification");
+    }
+
+    @each $color in $arrColorNotification {
+        .notification--#{$color} {
+            background-color: color-extra-light(#{$color});
+            border-color: color-extra-light-border(#{$color});
+            color: color-dark(#{$color});
+
+            .icon {
+                fill: color-regular(#{$color});
+            }
+        }
+    }
+}

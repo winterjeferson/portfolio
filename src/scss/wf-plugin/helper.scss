@@ -1,0 +1,57 @@
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.hide {
+    font-size: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    visibility: hidden;
+    width: 0;
+
+    * {
+        font-size: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        pointer-events: none;
+        visibility: hidden;
+        width: 0;
+    }
+}
+
+.hide-tablet {
+    @include tablet {
+        display: none;
+    }
+}
+
+.hide-tablet-landscape {
+    @include tablet-landscape {
+        display: none;
+    }
+}
+
+.hide-notebook {
+    @include notebook {
+        display: none;
+    }
+}
+
+.hide-desktop {
+    @include desktop {
+        display: none;
+    }
+}
+
+.hide-full-hd {
+    @include full-hd {
+        display: none;
+    }
+}

@@ -1,0 +1,146 @@
+$prefix: 'card';
+
+.card {
+    max-width: 100%;
+    width: auto;
+
+    &__header,
+    &__body,
+    &__footer {
+        @extend %extend-border-default;
+    }
+
+    &__body {
+        margin-top: -$border-width;
+    }
+
+    &__footer {
+        margin-top: -$border-width;
+    }
+
+    &--extra-small {
+        @include tablet-landscape {
+            width: 200px;
+        }
+
+        .#{$prefix}__header,
+        .#{$prefix}__body,
+        .#{$prefix}__footer {
+            padding: $extra-small;
+        }
+
+        .#{$prefix}__header {
+            border-radius: $border-radius-extra-small $border-radius-extra-small 0 0;
+        }
+
+        .#{$prefix}__footer {
+            border-radius: 0 0 $border-radius-extra-small $border-radius-extra-small;
+        }
+    }
+
+    &--small {
+        @include tablet-landscape {
+            width: 300px;
+        }
+
+        .#{$prefix}__header,
+        .#{$prefix}__body,
+        .#{$prefix}__footer {
+            padding: $small;
+        }
+
+        .#{$prefix}__header {
+            border-radius: $border-radius-small $border-radius-small 0 0;
+        }
+
+        .#{$prefix}__footer {
+            border-radius: 0 0 $border-radius-small $border-radius-small;
+        }
+    }
+
+    &--regular {
+        @include tablet-landscape {
+            width: 400px;
+        }
+
+        .#{$prefix}__header,
+        .#{$prefix}__body,
+        .#{$prefix}__footer {
+            padding: $regular;
+        }
+
+        .#{$prefix}__header {
+            border-radius: $border-radius-regular $border-radius-regular 0 0;
+        }
+
+        .#{$prefix}__footer {
+            border-radius: 0 0 $border-radius-regular $border-radius-regular;
+        }
+    }
+
+    &--big {
+        @include tablet-landscape {
+            width: 500px;
+        }
+
+        .#{$prefix}__header,
+        .#{$prefix}__body,
+        .#{$prefix}__footer {
+            padding: $big;
+        }
+
+        .#{$prefix}__header {
+            border-radius: $border-radius-big $border-radius-big 0 0;
+        }
+
+        .#{$prefix}__footer {
+            border-radius: 0 0 $border-radius-big $border-radius-big;
+        }
+    }
+
+    &--extra-big {
+        @include tablet-landscape {
+            width: 600px;
+        }
+
+        .#{$prefix}__header,
+        .#{$prefix}__body,
+        .#{$prefix}__footer {
+            padding: $extra-big;
+        }
+
+        .#{$prefix}__header {
+            border-radius: $border-radius-extra-big $border-radius-extra-big 0 0;
+        }
+
+        .#{$prefix}__footer {
+            border-radius: 0 0 $border-radius-extra-big $border-radius-extra-big;
+        }
+    }
+
+    @each $color in $arrColorCard {
+        &--#{$color} {
+
+            .#{$prefix}__header,
+            .#{$prefix}__body,
+            .#{$prefix}__footer {
+                border-color: color-light(#{$color});
+            }
+
+            .#{$prefix}__header,
+            .#{$prefix}__footer {
+                background-color: color-light(#{$color});
+            }
+
+            .#{$prefix}__header {
+                color: color-dark(#{$color});
+            }
+        }
+    }
+}
+
+.card-wrapper {
+    .card {
+        margin: $regular;
+    }
+}

@@ -1,0 +1,37 @@
+{% from 'include/template-nunjucks.html' import arrSize, arrColor %}
+{% include "include/head.html" %}
+<section class="center page-card">
+    <h1 class="page__title">Card</h1>
+    {% for size in arrSize %}
+    <h2 class="page__sub-title">{{size}}</h2>
+    <div class="card-wrapper row center">
+        {% for color in arrColor %}
+        <div class="card card--{{size}} card--{{color}}">
+            <header class="card__header">
+                <h4>{{size}}</h4>
+            </header>
+            <article class="card__body">
+                <img src="assets/img/banner/1.png" alt="image">
+                <p>
+                    Lorem ipsum dolor sit amet, consecttur adipscing elit.
+                    Proin ut ni diam. Nam ini pretium ligulas.
+                    Integersda dapibusa id quam non prium!
+                </p>
+            </article>
+            <footer class="card__footer button-wrapper">
+                <button type="button" class="button button--{{size}} button--grey">
+                    button
+                </button>
+                <button type="button" class="button button--{{size}} button--red">
+                    button
+                </button>
+                <button type="button" class="button button--{{size}} button--green">
+                    button
+                </button>
+            </footer>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</section>
+{% include "include/footer.html" %}

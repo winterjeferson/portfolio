@@ -1,0 +1,32 @@
+.icon {
+    &--extra-small {
+        height: $font-size-extra-small;
+        width: $font-size-extra-small;
+    }
+
+    &--small {
+        height: $font-size-small;
+        width: $font-size-small;
+    }
+
+    &--regular {
+        height: $font-size-regular;
+        width: $font-size-regular;
+    }
+
+    &--big {
+        height: $font-size-big;
+        width: $font-size-big;
+    }
+
+    &--extra-big {
+        height: $font-size-extra-big;
+        width: $font-size-extra-big;
+    }
+
+    @each $color in $arrColorIcon {
+        &--#{$color} {
+            fill: #{$color};
+        }
+    }
+}

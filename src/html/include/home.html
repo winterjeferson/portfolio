@@ -1,0 +1,32 @@
+{% set arrSlide = [
+    ['SASS,  Gulp JS, Nunjuck, Font Awasome' , 'cyan'],
+    ['Lazyload for images' , 'orange'],
+    ['Size: <br/> extra small, small, regular, big, extra big' , 'red']
+    ] %}
+
+<div class="row page-home">
+    <div class="carousel" data-current-slide="0" data-autoplay="false">
+        <ul class="carousel__list">
+            {% for slide in arrSlide %}
+            <li class="carousel__item background-{{slide[1]}}">
+                <div class="carousel__content">
+                    {{slide[0] | safe}}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="navigation-change button-wrapper row center hide">
+            <button type="button" class="button button--big" data-id="previous" aria-label="previous">
+                <svg class="icon icon--extra-big">
+                    <use xlink:href="./assets/img/icon.svg#previous"></use>
+                </svg>
+            </button>
+            <button type="button" class="button button--big" data-id="next" aria-label="next">
+                <svg class="icon icon--extra-big rotate-180">
+                    <use xlink:href="./assets/img/icon.svg#previous"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="carousel__controller carousel__controller--over button-wrapper row center"></div>
+    </div>
+</div>

@@ -1,0 +1,123 @@
+ [class*="color--"] {
+     display: flex;
+     position: relative;
+     width: calc(100% / 31);
+
+     &:before {
+         @include pseudo-element(block, relative, "");
+         padding: 50%;
+     }
+
+     @each $color in $arrColorDefault {
+         &.color--#{$color} {
+             background-color: color-regular(#{$color});
+
+             &:after {
+                 @include pseudo-element;
+                 background-color: rgba(0, 0, 0, 0.2);
+                 height: $small;
+                 left: calc(50% - #{$small / 2});
+                 top: calc(50% - #{$small / 2});
+                 width: $small;
+             }
+         }
+     }
+
+     @for $i from 1 through 15 {
+         &.color--grey-lighten-#{$i} {
+             background-color: lighten($color-grey, $i * $scale);
+         }
+
+         &.color--grey-darken-#{$i} {
+             background-color: darken($color-grey, $i * $scale);
+         }
+
+         &.color--blue-lighten-#{$i} {
+             background-color: lighten($color-blue, $i * $scale);
+         }
+
+         &.color--blue-darken-#{$i} {
+             background-color: darken($color-blue, $i * $scale);
+         }
+
+         &.color--green-lighten-#{$i} {
+             background-color: lighten($color-green, $i * $scale);
+         }
+
+         &.color--green-darken-#{$i} {
+             background-color: darken($color-green, $i * $scale);
+         }
+
+         &.color--cyan-lighten-#{$i} {
+             background-color: lighten($color-cyan, $i * $scale);
+         }
+
+         &.color--cyan-darken-#{$i} {
+             background-color: darken($color-cyan, $i * $scale);
+         }
+
+         &.color--orange-lighten-#{$i} {
+             background-color: lighten($color-orange, $i * $scale);
+         }
+
+         &.color--orange-darken-#{$i} {
+             background-color: darken($color-orange, $i * $scale);
+         }
+
+         &.color--red-lighten-#{$i} {
+             background-color: lighten($color-red, $i * $scale);
+         }
+
+         &.color--red-darken-#{$i} {
+             background-color: darken($color-red, $i * $scale);
+         }
+
+         &.color--yellow-lighten-#{$i} {
+             background-color: lighten($color-yellow, $i * $scale);
+         }
+
+         &.color--yellow-darken-#{$i} {
+             background-color: darken($color-yellow, $i * $scale);
+         }
+
+         &.color--purple-lighten-#{$i} {
+             background-color: lighten($color-purple, $i * $scale);
+         }
+
+         &.color--purple-darken-#{$i} {
+             background-color: darken($color-purple, $i * $scale);
+         }
+
+         &.color--brown-lighten-#{$i} {
+             background-color: lighten($color-brown, $i * $scale);
+         }
+
+         &.color--brown-darken-#{$i} {
+             background-color: darken($color-brown, $i * $scale);
+         }
+
+         &.color--pink-lighten-#{$i} {
+             background-color: lighten($color-pink, $i * $scale);
+         }
+
+         &.color--pink-darken-#{$i} {
+             background-color: darken($color-pink, $i * $scale);
+         }
+
+         &.color--black-lighten-#{$i} {
+             background-color: lighten($color-black, $i * $scale);
+         }
+
+         &.color--black-darken-#{$i} {
+             background-color: darken($color-black, $i * $scale);
+         }
+
+         &.color--white-lighten-#{$i} {
+             background-color: lighten($color-white, $i * $scale);
+         }
+
+         &.color--white-darken-#{$i} {
+             background-color: darken($color-white, $i * $scale);
+         }
+     }
+ }

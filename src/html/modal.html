@@ -1,0 +1,14 @@
+{% include "include/head.html" %}
+<h1 class="page__title">Modal</h1>
+<div class="row button-wrapper center">
+    <button type="button" class="button button--regular button--blue"
+        onclick="window.modal.buildModal({'kind': 'ajax', 'content': './modal-ajax.html', 'size': 'regular'});">
+        Modal
+    </button>
+    <button type="button" class="button button--regular button--blue" onclick="
+                                window.modal.buildModal({'kind': 'confirmation','content': 'Lorem ipsum dolor sit amet, consecttur adipscing elit?', 'size': 'small', 'click': 'console.log(this)'});
+                                ">
+        Confirmation
+    </button>
+</div>
+{% include "include/footer.html" %}

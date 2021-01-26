@@ -1,0 +1,11 @@
+{% from 'include/template-nunjucks.html' import arrColor %}
+{% include "include/head.html" %}
+<h1 class="page__title">Scroll</h1>
+<div class="row theme-scroll">
+    {% for color in arrColor %}
+    <div class="scrollbar scrollbar--{{color}}">
+        <div class="scrollbar-force-overflow"></div>
+    </div>
+    {% endfor %}
+</div>
+{% include "include/footer.html" %}

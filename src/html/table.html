@@ -1,0 +1,116 @@
+{% from 'include/template-nunjucks.html' import arrSize, arrColor %}
+{% include "include/head.html" %}
+<h1 class="page__title">Table</h1>
+{% for color in arrColor %}
+<div class="row page-table">
+    <table class="table table--{{color}}">
+        <thead>
+            <tr>
+                <th>Phasellusa</th>
+                <th>Lorem</th>
+                <th>Ipsum</th>
+                <th>Pellentesaque</th>
+                <th>Phasellusa</th>
+                <th>Lorem</th>
+                <th>Ipsum</th>
+                <th>Pellentesaque</th>
+                <th>Phasellusa</th>
+                <th>Lorem</th>
+                <th>Ipsum</th>
+                <th>Pellentesaque</th>
+                <th>Phasellusa</th>
+                <th>Lorem</th>
+                <th>Ipsum</th>
+                <th>Pellentesaque</th>
+                <th>Phasellusa</th>
+                <th>Lorem</th>
+                <th>Ipsum</th>
+                <th>Pellentesaque</th>
+                <th>Phasellusa</th>
+                <th>Lorem</th>
+                <th>Ipsum</th>
+                <th>Pellentesaque</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for size in arrSize %}
+            <tr>
+                <td>
+                    Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet, consecttur adipscing elit. Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet, consecttur adipscing elit. Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet, consecttur adipscing elit. Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet, consecttur adipscing elit. Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet, consecttur adipscing elit. Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+                <td>
+                    Lorem ipsum dolor sit amet, consecttur adipscing elit. Phasellusa vel tincidunt urnad.
+                </td>
+                <td>
+                    Pellentesaque urna loremd, interdum a metus a, pular fermentum urna.
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endfor %}
+{% include "include/footer.html" %}

@@ -1,0 +1,27 @@
+%extend-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+%extend-border-default {
+    border-style: solid;
+    border-width: $border-width;
+}
+
+%extend-disabled {
+    pointer-events: none;
+}
+
+%extend-component-margin {
+    margin-left: $regular;
+    margin-right: $regular;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

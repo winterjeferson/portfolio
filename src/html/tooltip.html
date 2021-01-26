@@ -1,0 +1,15 @@
+{% from 'include/template-nunjucks.html' import arrSize, arrColor %}
+{% set arrPosition = ['top', 'right', 'bottom', 'left'] %}
+{% include "include/head.html" %}
+<h1 class="page__title">Tooltip</h1>
+{% for position in arrPosition %}
+<div class="row center button-wrapper tooltip-wrapper">
+    {% for color in arrColor %}
+    <a href="javascript:;" class="link link--{{color}} tooltip tooltip--{{color}} tooltip--{{position}}" data-tooltip="tooltip text here">
+        {{position}}
+    </a>
+    {% endfor %}
+</div>
+{% endfor %}
+
+{% include "include/footer.html" %}

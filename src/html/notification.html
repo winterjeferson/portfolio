@@ -1,0 +1,29 @@
+{% from 'include/template-nunjucks.html' import arrSize, arrColor %}
+{% include "include/head.html" %}
+<h1 class="page__title">Notification</h1>
+<div class="button-wrapper center">
+    <button type="button" class="button button--regular button--blue"
+        onclick="window.notification.add({'text': 'Lorem ipsum dolor sit amet, consecttur adipscing elit.', 'color': 'red'});">
+        Default Place
+    </button>
+    <button type="button" class="button button--regular button--blue"
+        onclick="window.notification.add({'text': 'Lorem ipsum dolor sit amet, consecttur adipscing elit.', 'color': 'red', 'place': '#notification_place'});">
+        Pointing Place
+    </button>
+</div>
+<div id="notification_place" class="row">
+</div>
+<div class="notification">
+    {% for color in arrColor %}
+    <div class="notification__item notification--regular notification--{{color}}">
+        <span class="notification__text">{{color}}</span>
+        <button type="button" class="button button--small button--small--proportional button--transparent"
+            aria-label="close">
+            <svg class="icon icon--small rotate-45">
+                <use xlink:href="./assets/img/icon.svg#plus"></use>
+            </svg>
+        </button>
+    </div>
+    {% endfor %}
+</div>
+{% include "include/footer.html" %}

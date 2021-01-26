@@ -1,0 +1,87 @@
+{% from 'include/template-nunjucks.html' import arrSize, arrColor %}
+{% set arrSocial = [
+        'facebook',
+        'twitter',
+        'youtube',
+        'linkedin',
+        'github',
+        'instagram'
+    ]
+%}
+{% include "include/head.html" %}
+<section class="center">
+    <h1 class="page__title">Button</h1>
+    {% for size in arrSize %}
+    <h2 class="page__sub-title">{{size}}</h2>
+    <nav class="button-wrapper row center">
+        {% for color in arrColor %}
+        <button type="button" class="button button--{{size}} button--{{color}}">
+            button {{size}} {{color}}
+        </button>
+        {% endfor %}
+    </nav>
+    {% endfor %}
+</section>
+<section class="center">
+    <h1 class="page__title">Drop down</h1>
+    {% for size in arrSize %}
+    <h2 class="page__sub-title">{{size}}</h2>
+    <nav class="button-wrapper row center">
+        {% for color in arrColor %}
+        <div class="drop-down">
+            <a href="javascript:;" class="button button--{{size}} button--{{color}}">Button</a>
+            <div class="drop-down__content">
+                <a href="javascript:;" class="button button--{{size}} button--{{color}}">Button</a>
+                <a href="javascript:;" class="button button--{{size}} button--{{color}}">Drop down</a>
+                <a href="javascript:;" class="button button--{{size}} button--{{color}}">Dolor sit amet</a>
+                <a href="javascript:;" class="button button--{{size}} button--{{color}}">Consecttur adipscing elit</a>
+                <a href="javascript:;" class="button button--{{size}} button--{{color}}">Lorem ipsum</a>
+                <a href="javascript:;" class="button button--{{size}} button--{{color}}">Dolor sit amet</a>
+            </div>
+        </div>
+        {% endfor %}
+    </nav>
+    {% endfor %}
+</section>
+<section class="center">
+    <h1 class="page__title">Button Outline</h1>
+    {% for size in arrSize %}
+    <h2 class="page__sub-title">{{size}}</h2>
+    <nav class="button-wrapper row center">
+        {% for color in arrColor %}
+        <button type="button" class="button-outline button-outline--{{size}} button-outline--{{color}}">
+            button {{size}} {{color}}
+        </button>
+        {% endfor %}
+    </nav>
+    {% endfor %}
+</section>
+<section class="center">
+    <h1 class="page__title">Link</h1>
+    {% for size in arrSize %}
+    <h2 class="page__sub-title">{{size}}</h2>
+    <nav class="button-wrapper row center">
+        {% for color in arrColor %}
+        <button type="button" class="link link--{{size}} link--{{color}}">
+            button {{size}} {{color}}
+        </button>
+        {% endfor %}
+    </nav>
+    {% endfor %}
+</section>
+<section class="center">
+    <h1 class="page__title">Social</h1>
+    {% for size in arrSize %}
+    <div class="row center button-wrapper">
+        {% for social in arrSocial %}
+        <a href="javascript:;" rel="noopener"
+            class="button button--{{size}} button--{{size}}--proportional button--grey">
+            <svg class="icon icon--{{size}} icon--black">
+                <use xlink:href="./assets/img/icon.svg#{{social}}"></use>
+            </svg>
+        </a>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</section>
+{% include "include/footer.html" %}

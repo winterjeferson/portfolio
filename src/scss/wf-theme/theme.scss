@@ -1,0 +1,202 @@
+* {
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template:
+        "grid__header grid__header"min-content "grid__menu grid__menu"min-content "grid__content grid__content"auto "grid__footer grid__footer"min-content / auto;
+    height: 100%;
+
+    @include tablet-landscape {
+        grid-template:
+            "grid__header grid__header"min-content "grid__menu grid__content"auto "grid__footer grid__footer"min-content / 250px auto;
+    }
+
+    &__header {
+        grid-area: grid__header;
+    }
+
+    &__menu {
+        grid-area: grid__menu;
+    }
+
+    &__content {
+        grid-area: grid__content;
+    }
+
+    &__footer {
+        grid-area: grid__footer;
+    }
+}
+
+.theme-header,
+.theme-footer {
+    align-items: center;
+    background-color: $color-grey-light-2;
+    color: $color-text;
+    padding: $regular;
+}
+
+.theme-header {
+    justify-content: space-between;
+
+    &__about {
+        color: $color-grey;
+    }
+}
+
+.theme-footer {
+    justify-content: flex-end;
+
+    .button {
+        margin-left: $regular;
+    }
+}
+
+.theme-menu {
+    background-color: $color-grey-light-3;
+    height: 100%;
+    padding: $regular;
+
+    .column {
+        .button {
+            font-size: $font-size-regular;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.theme-version {
+    .button {
+        margin-left: $regular;
+    }
+}
+
+.background-cyan {
+    background-color: $color-cyan;
+}
+
+.background-orange {
+    background-color: $color-orange;
+}
+
+.background-red {
+    background-color: $color-red;
+}
+
+.carousel {
+    .icon {
+        fill: $color-grey-dark-2;
+    }
+}
+
+.page {
+    padding: $big;
+
+    &__sub-title,
+    &__title {
+        font-weight: 100;
+        text-align: center;
+    }
+
+    &__sub-title {
+        color: $color-grey;
+        font-size: $font-size-big;
+    }
+
+    &__title {
+        color: $color-text;
+        font-size: $font-size-extra-big;
+    }
+}
+
+.page-home {
+    height: 100%;
+
+    .carousel,
+    .carousel__list {
+        height: 100%;
+        min-height: 300px;
+    }
+
+    .carousel {
+
+        &__item {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        &__content {
+            color: $color-white;
+            font-size: $font-size-big;
+            width: calc(100% - #{$extra-big});
+
+            @include tablet-landscape {
+                font-size: $font-size-extra-big * 2;
+            }
+        }
+    }
+
+    .icon {
+        fill: $color-white;
+    }
+}
+
+.card--extra-big,
+.card--big {
+    display: none;
+
+    @include tablet-landscape {
+        display: initial;
+    }
+}
+
+.page-table {
+    .wrapper-table-responsive {
+        margin-bottom: $extra-big;
+        max-height: 500px;
+    }
+}
+
+.tooltip-wrapper {
+    margin-bottom: $extra-big;
+}
+
+.gallery {
+
+    &__item {
+        margin: $extra-small;
+
+        @include tablet-landscape {
+            flex: 1;
+            margin: $regular;
+        }
+    }
+}
+
+.progress {
+    margin-bottom: $regular;
+
+    .progress__bar {
+        width: 80%;
+    }
+}
+
+.theme-scroll {
+    .scrollbar {
+        height: 300px;
+        margin: $regular;
+        overflow-y: scroll;
+    }
+
+    .scrollbar-force-overflow {
+        min-height: 450px;
+    }
+}
+
+.tag--extra-big {
+    display: none;
+}

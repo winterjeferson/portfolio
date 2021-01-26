@@ -1,0 +1,36 @@
+{% set arrMenu = [
+'button',
+'card',
+'carousel',
+'error',
+'form',
+'gallery',
+'icon',
+'lazy-load',
+'loading',
+'menu',
+'modal',
+'notification',
+'palette',
+'progress',
+'scroll',
+'table',
+'tag',
+'text',
+'tooltip'
+] %}
+
+<div class="theme-menu button-wrapper">
+    <button type="button" class="button button--regular button--regular--proportional button--grey toggle-menu" aria-label="Menu">
+        <svg class="icon icon--regular">
+            <use xlink:href="./assets/img/icon.svg#menu"></use>
+        </svg>
+    </button>
+    <nav class="column toggle-menu__content">
+        {% for menu in arrMenu %}
+        <a href="{{menu}}.html" data-id="{{menu}}" class="button button--small button--blue">
+            {{menu}}
+        </a>
+        {% endfor %}
+    </nav>
+</div>

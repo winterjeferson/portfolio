@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=5,user-scalable=yes,width=device-width">
+    <meta name="description" content="Description" />
+    <meta name="author" content="Jeferson Winter" />
+    <meta name="keywords" content="framework, frontend, html, css, javascript" />
+    <title>Winter Front</title>
+
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="./assets/img/logo/144-144.png" />
+    <meta name="application-name" content="Jeferson Winter" />
+    <link rel="shortcut icon" href="./assets/img/logo/16-16.png" />
+    <link rel="apple-touch-icon" href="./assets/img/logo/57-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/logo/72-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/logo/114-114.png" />
+
+    <meta property="og:image" content="./assets/img/logo/600-315.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Winter Front" />
+    <meta property="og:site_name" content="Winter Front" />
+    <meta property="og:description" content="Description" />
+
+    <link href="./assets/css/wf-plugin.css" rel="stylesheet">
+    <link href="./assets/css/wf-theme.css" rel="stylesheet">
+
+    <script>
+        const globalLanguage = "pt";
+    </script>
+</head>
+
+<body>
+    <main class="grid">
+        <div class="loading-main row center">
+    <div class="loading loading-1 loading-1--big loading-1--white animate"></div>
+</div>
+        <header class="grid__header">
+            <div class="row theme-header">
+    <a href="index.html" class="button button--regular button--regular--proportional button--grey" aria-label="home">
+        <svg class="icon icon--regular icon--grey">
+            <use xlink:href="./assets/img/icon.svg#home"></use>
+        </svg>
+    </a>
+    <div class="theme-version">
+        v: 2.0.0
+        <a href="https://github.com/winterjeferson/winter-front" target="_blank" rel="noopener"
+            class="button button--regular button--green">
+            Download (Github)
+        </a>
+    </div>
+</div>
+        </header>
+        <aside class="grid__menu">
+            
+
+<div class="theme-menu button-wrapper">
+    <button type="button" class="button button--regular button--regular--proportional button--grey toggle-menu" aria-label="Menu">
+        <svg class="icon icon--regular">
+            <use xlink:href="./assets/img/icon.svg#menu"></use>
+        </svg>
+    </button>
+    <nav class="column toggle-menu__content">
+        
+        <a href="button.html" data-id="button" class="button button--small button--blue">
+            button
+        </a>
+        
+        <a href="card.html" data-id="card" class="button button--small button--blue">
+            card
+        </a>
+        
+        <a href="carousel.html" data-id="carousel" class="button button--small button--blue">
+            carousel
+        </a>
+        
+        <a href="error.html" data-id="error" class="button button--small button--blue">
+            error
+        </a>
+        
+        <a href="form.html" data-id="form" class="button button--small button--blue">
+            form
+        </a>
+        
+        <a href="gallery.html" data-id="gallery" class="button button--small button--blue">
+            gallery
+        </a>
+        
+        <a href="icon.html" data-id="icon" class="button button--small button--blue">
+            icon
+        </a>
+        
+        <a href="lazy-load.html" data-id="lazy-load" class="button button--small button--blue">
+            lazy-load
+        </a>
+        
+        <a href="loading.html" data-id="loading" class="button button--small button--blue">
+            loading
+        </a>
+        
+        <a href="menu.html" data-id="menu" class="button button--small button--blue">
+            menu
+        </a>
+        
+        <a href="modal.html" data-id="modal" class="button button--small button--blue">
+            modal
+        </a>
+        
+        <a href="notification.html" data-id="notification" class="button button--small button--blue">
+            notification
+        </a>
+        
+        <a href="palette.html" data-id="palette" class="button button--small button--blue">
+            palette
+        </a>
+        
+        <a href="progress.html" data-id="progress" class="button button--small button--blue">
+            progress
+        </a>
+        
+        <a href="scroll.html" data-id="scroll" class="button button--small button--blue">
+            scroll
+        </a>
+        
+        <a href="table.html" data-id="table" class="button button--small button--blue">
+            table
+        </a>
+        
+        <a href="tag.html" data-id="tag" class="button button--small button--blue">
+            tag
+        </a>
+        
+        <a href="text.html" data-id="text" class="button button--small button--blue">
+            text
+        </a>
+        
+        <a href="tooltip.html" data-id="tooltip" class="button button--small button--blue">
+            tooltip
+        </a>
+        
+    </nav>
+</div>
+        </aside>
+        <article class="grid__content page">
+
+
+
+<h1 class="page__title">Carousel</h1>
+
+<h2 class="page__sub-title">slide</h2>
+<div class="carousel" data-current-slide="0" data-style="slide" data-autoplay="true">
+    <ul class="carousel__list">
+        
+        <li class="carousel__item">
+            <a href="javascript:;">
+                <img src="assets/img/banner/1.png" alt="banner">
+            </a>
+        </li>
+        
+        <li class="carousel__item">
+            <a href="javascript:;">
+                <img src="assets/img/banner/2.png" alt="banner">
+            </a>
+        </li>
+        
+        <li class="carousel__item">
+            <a href="javascript:;">
+                <img src="assets/img/banner/1.png" alt="banner">
+            </a>
+        </li>
+        
+    </ul>
+    <div class="navigation-change button-wrapper row center">
+        <button type="button" class="button button--big" data-id="previous" aria-label="previous">
+            <svg class="icon icon--extra-big">
+                <use xlink:href="./assets/img/icon.svg#previous"></use>
+            </svg>
+        </button>
+        <button type="button" class="button button--big" data-id="next" aria-label="next">
+            <svg class="icon icon--extra-big rotate-180">
+                <use xlink:href="./assets/img/icon.svg#previous"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="carousel__controller carousel__controller--over button-wrapper row center"></div>
+</div>
+
+<h2 class="page__sub-title">fade</h2>
+<div class="carousel" data-current-slide="0" data-style="fade" data-autoplay="true">
+    <ul class="carousel__list">
+        
+        <li class="carousel__item">
+            <a href="javascript:;">
+                <img src="assets/img/banner/1.png" alt="banner">
+            </a>
+        </li>
+        
+        <li class="carousel__item">
+            <a href="javascript:;">
+                <img src="assets/img/banner/2.png" alt="banner">
+            </a>
+        </li>
+        
+        <li class="carousel__item">
+            <a href="javascript:;">
+                <img src="assets/img/banner/1.png" alt="banner">
+            </a>
+        </li>
+        
+    </ul>
+    <div class="navigation-change button-wrapper row center">
+        <button type="button" class="button button--big" data-id="previous" aria-label="previous">
+            <svg class="icon icon--extra-big">
+                <use xlink:href="./assets/img/icon.svg#previous"></use>
+            </svg>
+        </button>
+        <button type="button" class="button button--big" data-id="next" aria-label="next">
+            <svg class="icon icon--extra-big rotate-180">
+                <use xlink:href="./assets/img/icon.svg#previous"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="carousel__controller carousel__controller--over button-wrapper row center"></div>
+</div>
+
+
+<h2 class="page__sub-title">slide text</h2>
+<div class="carousel" data-current-slide="0" data-style="slide" data-autoplay="false">
+    <ul class="carousel__list">
+        
+        <li class="carousel__item">
+            <span class="carousel__content">
+                1 - Lorem ipsum dolor sit amet, consecttur adipscing elit. Proin ut ni
+                diam. Nam ini pretium ligulas. Integersda dapibusa id quam non prium! Suspendisse
+                sodalesa efficiturd nullsa, eta elementumds dui consequat eu. Curabituras interd
+                augue,
+                at dictuquam ullamcorperat.
+            </span>
+        </li>
+        
+        <li class="carousel__item">
+            <span class="carousel__content">
+                2 - Lorem ipsum dolor sit amet, consecttur adipscing elit. Proin ut ni
+                diam. Nam ini pretium ligulas. Integersda dapibusa id quam non prium! Suspendisse
+                sodalesa efficiturd nullsa, eta elementumds dui consequat eu. Curabituras interd
+                augue,
+                at dictuquam ullamcorperat.
+            </span>
+        </li>
+        
+        <li class="carousel__item">
+            <span class="carousel__content">
+                3 - Lorem ipsum dolor sit amet, consecttur adipscing elit. Proin ut ni
+                diam. Nam ini pretium ligulas. Integersda dapibusa id quam non prium! Suspendisse
+                sodalesa efficiturd nullsa, eta elementumds dui consequat eu. Curabituras interd
+                augue,
+                at dictuquam ullamcorperat.
+            </span>
+        </li>
+        
+    </ul>
+    <div class="navigation-change button-wrapper row center hide">
+        <button type="button" class="button button--big" data-id="previous" aria-label="previous">
+            <svg class="icon icon--extra-big">
+                <use xlink:href="./assets/img/icon.svg#previous"></use>
+            </svg>
+        </button>
+        <button type="button" class="button button--big" data-id="next" aria-label="next">
+            <svg class="icon icon--extra-big rotate-180">
+                <use xlink:href="./assets/img/icon.svg#previous"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="carousel__controller button-wrapper row center"></div>
+</div>
+
+<h2 class="page__sub-title">fade text</h2>
+<div class="carousel" data-current-slide="0" data-style="fade" data-autoplay="false">
+    <ul class="carousel__list">
+        
+        <li class="carousel__item">
+            <span class="carousel__content">
+                1 - Lorem ipsum dolor sit amet, consecttur adipscing elit. Proin ut ni
+                diam. Nam ini pretium ligulas. Integersda dapibusa id quam non prium! Suspendisse
+                sodalesa efficiturd nullsa, eta elementumds dui consequat eu. Curabituras interd
+                augue,
+                at dictuquam ullamcorperat.
+            </span>
+        </li>
+        
+        <li class="carousel__item">
+            <span class="carousel__content">
+                2 - Lorem ipsum dolor sit amet, consecttur adipscing elit. Proin ut ni
+                diam. Nam ini pretium ligulas. Integersda dapibusa id quam non prium! Suspendisse
+                sodalesa efficiturd nullsa, eta elementumds dui consequat eu. Curabituras interd
+                augue,
+                at dictuquam ullamcorperat.
+            </span>
+        </li>
+        
+        <li class="carousel__item">
+            <span class="carousel__content">
+                3 - Lorem ipsum dolor sit amet, consecttur adipscing elit. Proin ut ni
+                diam. Nam ini pretium ligulas. Integersda dapibusa id quam non prium! Suspendisse
+                sodalesa efficiturd nullsa, eta elementumds dui consequat eu. Curabituras interd
+                augue,
+                at dictuquam ullamcorperat.
+            </span>
+        </li>
+        
+    </ul>
+    <div class="navigation-change button-wrapper row center hide">
+        <button type="button" class="button button--big" data-id="previous" aria-label="previous">
+            <svg class="icon icon--extra-big">
+                <use xlink:href="./assets/img/icon.svg#previous"></use>
+            </svg>
+        </button>
+        <button type="button" class="button button--big" data-id="next" aria-label="next">
+            <svg class="icon icon--extra-big rotate-180">
+                <use xlink:href="./assets/img/icon.svg#previous"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="carousel__controller button-wrapper row center"></div>
+</div>
+
+        </article>
+        <footer class="grid__footer">
+            <div class="row theme-footer">
+    By:
+    <a href="https://www.jefersonwinter.com.br" target="_blank" rel="noopener" class="button button--regular button--grey">
+        Jeferson Winter
+    </a>
+</div>
+        </footer>
+
+        <script type="module">
+            import * as wfp from './assets/js/wf-plugin.js';
+            import * as wft from './assets/js/wf-theme.js';
+        </script>
+    </main>
+</body>
+
+</html>

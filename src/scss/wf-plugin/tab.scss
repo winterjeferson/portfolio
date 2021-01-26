@@ -1,0 +1,67 @@
+$button: button;
+
+.tab {
+    align-items: flex-end;
+    border-bottom: $border-width solid;
+    margin-bottom: 0;
+
+    .button,
+    .drop-down {
+        margin-bottom: 0;
+    }
+
+    .drop-down>.button,
+    >.button {
+        background-color: transparent;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-color: transparent;
+
+        @each $color in $arrColorButton {
+            &--#{$color} {
+                color: color-regular(#{$color});
+
+                &:hover {
+                    background-color: color-regular(#{$color});
+                    color: color-regular-contrast(#{$color});
+                }
+
+                .icon {
+                    fill: color-regular(#{$color});
+                }
+            }
+        }
+    }
+
+    .drop-down>.button {
+        margin-top: -$border-width;
+
+        @each $color in $arrColorButton {
+            &--#{$color} {
+                &:after {
+                    @include triangle(color-regular(#{$color}), down, $size: $small, $position: relative, $round: false);
+                }
+
+                &:hover {
+                    &:after {
+                        @include triangle(color-regular-contrast(#{$color}), down, $size: $small, $position: relative, $round: false);
+                    }
+                }
+            }
+        }
+    }
+
+    @each $color in $arrColorButton {
+        &--#{$color} {
+            border-bottom-color: color-regular(#{$color});
+        }
+
+        .#{$button}--#{$color} {
+            &.tab--active {
+                background-color: color-regular(#{$color});
+                border-color: color-regular(#{$color});
+                color: color-regular-contrast(#{$color});
+            }
+        }
+    }
+}
