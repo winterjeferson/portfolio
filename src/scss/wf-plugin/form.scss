@@ -42,7 +42,7 @@ $prefix: 'form';
         @extend %extend-component-margin;
     }
 
-    @each $color in $arrColorButton {
+    @each $color in $arrColorForm {
         &--#{$color} {
 
             input[type="checkbox"],

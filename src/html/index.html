@@ -1,13 +1,33 @@
+{% set arrDefault =
+    {
+        description: 'Graduado em Comunicação Social, habilitação em Publicidade e Propaganda. Mais de 15 anos de experiência no ramo, atuo como diagramador, designer e programador.',
+        title: 'Jeferson Winter'
+    }
+%}
 {% include "include/head.html" %}
 {% include "include/loading-main.html" %}
-<aside>
-    {% include "photo.html" %}
-    {% include "skill.html" %}
-</aside>
-<section>
-    {% include "about.html" %}
-    {% include "experience.html" %}
-    {% include "project.html" %}
-    {% include "contact.html" %}
-</section>
+<div class="grid">
+    <aside class="grid__content-dark">
+        <article class="row photo">
+            {% include "include/photo.html" %}
+        </article>
+        <article class="row skill-wrapper">
+            {% include "include/skill.html" %}
+        </article>
+    </aside>
+    <section class="grid__content-light">
+        <article class="article">
+            {% include "include/about.html" %}
+        </article>
+        <article class="article">
+            {% include "include/experience.html" %}
+        </article>
+        <article class="article">
+            {% include "include/project.html" %}
+        </article>
+        <article class="article">
+            {% include "include/contact.html" %}
+        </article>
+    </section>
+</div>
 {% include "include/footer.html" %}

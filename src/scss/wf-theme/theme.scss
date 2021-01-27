@@ -1,202 +1,126 @@
-* {
-    font-family: sans-serif;
+body {
+    background: repeating-linear-gradient(90deg, #bec3c7, #b0b6bb 2px, #bec3c7 4px, #b0b6bb 8px);
+    color: $color-black;
+    font-family: 'Roboto', sans-serif;
 }
 
 .grid {
     display: grid;
-    grid-template:
-        "grid__header grid__header"min-content "grid__menu grid__menu"min-content "grid__content grid__content"auto "grid__footer grid__footer"min-content / auto;
+    grid-template: "content-dark"auto "content-light"auto;
     height: 100%;
-
-    @include tablet-landscape {
-        grid-template:
-            "grid__header grid__header"min-content "grid__menu grid__content"auto "grid__footer grid__footer"min-content / 250px auto;
-    }
-
-    &__header {
-        grid-area: grid__header;
-    }
-
-    &__menu {
-        grid-area: grid__menu;
-    }
-
-    &__content {
-        grid-area: grid__content;
-    }
-
-    &__footer {
-        grid-area: grid__footer;
-    }
-}
-
-.theme-header,
-.theme-footer {
-    align-items: center;
-    background-color: $color-grey-light-2;
-    color: $color-text;
-    padding: $regular;
-}
-
-.theme-header {
-    justify-content: space-between;
-
-    &__about {
-        color: $color-grey;
-    }
-}
-
-.theme-footer {
-    justify-content: flex-end;
-
-    .button {
-        margin-left: $regular;
-    }
-}
-
-.theme-menu {
-    background-color: $color-grey-light-3;
-    height: 100%;
-    padding: $regular;
-
-    .column {
-        .button {
-            font-size: $font-size-regular;
-            margin-bottom: 0;
-        }
-    }
-}
-
-.theme-version {
-    .button {
-        margin-left: $regular;
-    }
-}
-
-.background-cyan {
-    background-color: $color-cyan;
-}
-
-.background-orange {
-    background-color: $color-orange;
-}
-
-.background-red {
-    background-color: $color-red;
-}
-
-.carousel {
-    .icon {
-        fill: $color-grey-dark-2;
-    }
-}
-
-.page {
     padding: $big;
 
-    &__sub-title,
-    &__title {
-        font-weight: 100;
-        text-align: center;
+    @include tablet-landscape {
+        grid-template: "content-dark content-light"auto;
     }
 
-    &__sub-title {
-        color: $color-grey;
-        font-size: $font-size-big;
-    }
+    &__content-dark {
+        background-color: $color-black;
+        grid-area: content-dark;
+        width: 100%;
 
-    &__title {
-        color: $color-text;
-        font-size: $font-size-extra-big;
-    }
-}
+        @include tablet-landscape {
+            width: 300px;
+        }
 
-.page-home {
-    height: 100%;
+        .image {
+            border-radius: 50%;
+            margin: auto;
+        }
 
-    .carousel,
-    .carousel__list {
-        height: 100%;
-        min-height: 300px;
-    }
+        .photo {
+            .title {
+                color: $color-yellow;
+            }
+        }
 
-    .carousel {
-
-        &__item {
-            align-items: center;
-            justify-content: center;
+        .title,
+        .subtitle {
+            color: $color-black-light-4;
             text-align: center;
             width: 100%;
         }
 
-        &__content {
-            color: $color-white;
+        .title {
             font-size: $font-size-big;
-            width: calc(100% - #{$extra-big});
+            font-weight: bold;
+        }
 
-            @include tablet-landscape {
-                font-size: $font-size-extra-big * 2;
-            }
+        .subtitle {
+            font-size: $font-size-regular;
+            margin-top: -1rem;
         }
     }
 
-    .icon {
-        fill: $color-white;
+    &__content-light {
+        background-color: $color-white;
+        grid-area: content-light;
+    }
+
+    &__content-dark,
+    &__content-light {
+        padding: $extra-big;
     }
 }
 
-.card--extra-big,
-.card--big {
-    display: none;
-
-    @include tablet-landscape {
-        display: initial;
-    }
-}
-
-.page-table {
-    .wrapper-table-responsive {
-        margin-bottom: $extra-big;
-        max-height: 500px;
-    }
-}
-
-.tooltip-wrapper {
+.article {
     margin-bottom: $extra-big;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .title {
+        background-color: $color-grey;
+        color: $color-black;
+        font-size: $font-size-extra-big;
+        font-weight: bold;
+        padding: $big;
+    }
+
+    p {
+        padding: 0 $big;
+    }
 }
 
-.gallery {
+.list {
+    border-bottom: 1px dotted $color-grey-light-2;
+    list-style: none;
+    margin-bottom: $big;
+    padding: 0 $big $big;
 
-    &__item {
-        margin: $extra-small;
+    li {
+        line-height: 150%;
+    }
+}
 
-        @include tablet-landscape {
-            flex: 1;
-            margin: $regular;
+.skill-wrapper {
+    .title {
+        margin-top: $extra-big;
+    }
+
+    .progress {
+        background-color: $color-black-light-2;
+        box-shadow: none;
+    }
+
+    .skill {
+        span {
+            color: $color-black-light-10;
+            margin: $regular 0;
         }
     }
 }
 
-.progress {
-    margin-bottom: $regular;
-
-    .progress__bar {
-        width: 80%;
-    }
+.form,
+.social {
+    padding: 0 $big;
 }
 
-.theme-scroll {
-    .scrollbar {
-        height: 300px;
-        margin: $regular;
-        overflow-y: scroll;
-    }
-
-    .scrollbar-force-overflow {
-        min-height: 450px;
-    }
+.social {
+    margin-top: $extra-big;
 }
 
-.tag--extra-big {
-    display: none;
+.button--white {
+    border-color: $color-grey;
 }

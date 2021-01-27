@@ -1,0 +1,41 @@
+<h1 class="title">Experiência</h1>
+{% set arr = [
+    {
+        company: 'Arezzo&Co',
+        position: 'Analista Frontend III',
+        about: 'Diagramação e codificação de e-commerce',
+        date: 'Julho de 2020(emprego atual)'
+    },
+    {
+        company: 'BR Supply',
+        position: 'Supervisor de Web Designer',
+        about: 'Diagramação e codificação de Web Sites, e-commerce, sistemas, e-mail marketing (frontend e backend)',
+        date: 'Janeiro de 2019 a Junho de 2020'
+    },
+    {
+        company: 'Bcs Automação',
+        position: 'Web designer',
+        about: 'Layout, diagramação e codificação de Web Sites. Sistemas de gerenciamento. Sistemas localizadores para eventos. Material gráfico impresso',
+        date: 'Fevereiro de 2012 a Janeiro de 2019'
+    },
+    {
+        company: 'Rede de farmácias Capilé',
+        position: 'Web designer',
+        about: 'Layout, diagramação e codificação de Web Sites. Sistemas de gerenciamento. Ilustrações. Animações. Produção de conteúdo áudio visual',
+        date: 'Janeiro de 2011 a Janeiro de 2012'
+    },
+    {
+        company: 'Microlins',
+        position: 'Instrutor de informática',
+        about: 'Instrutor de Web Design, Design gráfico e informática básica',
+        date: 'Janeiro de 2010 a Dezembro de 2010'
+    }
+] %}
+{% for item in arr %}
+<ul class="list">
+    <li><strong>{{item.company}}.</strong></li>
+    <li><i>{{item.position}}.</i></li>
+    <li>{{item.about}}.</li>
+    <li><small>{{item.date}}.</small></li>
+</ul>
+{% endfor %}

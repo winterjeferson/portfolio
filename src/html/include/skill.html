@@ -1,0 +1,132 @@
+<h2 class="title">Habilidades</h2>
+{% set arr = [
+    {
+        title: 'Photoshop',
+        color: 'blue',
+        size: '80'
+    },
+    {
+        title: 'Illustrator',
+        color: 'blue',
+        size: '70'
+    },
+    {
+        title: 'Corel Draw',
+        color: 'blue',
+        size: '80'
+    }
+] %}
+{% for item in arr %}
+<div class="skill row">
+    <span>{{item.title}}</span>
+    <div class="progress progress--small progress--{{item.color}}">
+        <div class="progress__bar" style="width:{{item.size}}%"></div>
+    </div>
+</div>
+{% endfor %}
+
+
+<h2 class="title">Desenvolvimento</h2>
+{% set arr = [
+    {
+        title: 'HTML 5',
+        color: 'green',
+        size: '90'
+    },
+    {
+        title: 'SEO',
+        color: 'red',
+        size: '80'
+    },
+    {
+        title: 'Nunjucks',
+        color: 'red',
+        size: '80'
+    },
+    {
+        title: 'UX / UI',
+        color: 'red',
+        size: '70'
+    },
+    {
+        title: 'CSS / SASS / SCSS',
+        color: 'green',
+        size: '90'
+    },
+    {
+        title: 'Bootstrap',
+        color: 'red',
+        size: '70'
+    },
+    {
+        title: 'Javascript',
+        color: 'green',
+        size: '90'
+    },
+    {
+        title: 'JQuery',
+        color: 'red',
+        size: '90'
+    },
+    {
+        title: 'Angular',
+        color: 'red',
+        size: '50'
+    },
+    {
+        title: 'React',
+        color: 'red',
+        size: '50'
+    },
+    {
+        title: 'Gulp / Grunt',
+        color: 'red',
+        size: '90'
+    },
+    {
+        title: 'PHP',
+        color: 'green',
+        size: '80'
+    },
+    {
+        title: 'SQL',
+        color: 'green',
+        size: '50'
+    },
+    {
+        title: 'Python',
+        color: 'green',
+        size: '50'
+    }
+] %}
+{% for item in arr %}
+<div class="skill row">
+    <span>{{item.title}}</span>
+    <div class="progress progress--small progress--{{item.color}}">
+        <div class="progress__bar" style="width:{{item.size}}%"></div>
+    </div>
+</div>
+{% endfor %}
+
+
+<h2 class="title">Inglês</h2>
+{% set arr = [
+    {
+        title: 'Leitura / Escrita',
+        color: 'yellow',
+        size: '60'
+    },
+    {
+        title: 'Conversação',
+        color: 'yellow',
+        size: '50'
+    }
+] %}
+{% for item in arr %}
+<div class="skill row">
+    <span>{{item.title}}</span>
+    <div class="progress progress--small progress--{{item.color}}">
+        <div class="progress__bar" style="width:{{item.size}}%"></div>
+    </div>
+</div>
+{% endfor %}

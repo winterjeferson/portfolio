@@ -71,7 +71,6 @@ gulp.task('buildJsLint', () => {
 
 
 gulp.task('buildJs', gulp.series(
-    'buildJsConcat',
     'buildJsLint',
     'buildJsConcatPlugin',
 ));
