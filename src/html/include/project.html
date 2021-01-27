@@ -4,31 +4,39 @@
         link_title: 'October 31',
         link: 'https://www.october31.com.br/',
         description: 'Jogo de RPG grátis multiplataforma, que você poderá jogar em seu computador, tablet, smartphone ou smart TV. Conta com gráficos, roteiro e trilha sonora autoral',
-        tag: '#SCSS #JAVSCRIPT #JQUERY #PHP #MYSQL #GULP'
+        tag: ['SCSS', 'JAVSCRIPT', 'JQUERY', 'PHP', 'MYSQL', 'GULP']
     },
     {
         link_title: 'Winter Front',
         link: 'https://github.com/winterjeferson/winter-front-2-0-0/',
         description: 'Framework frontend desenvolvido por mim, de código aberto, disponível no GITHUB',
-        tag: '#SCSS #JAVSCRIPT #GULP'
+        tag: ['SCSS', 'JAVSCRIPT', 'GULP', 'HTML']
     },
     {
         link_title: 'Winter Back PHP',
         link: 'https://github.com/winterjeferson/winter-back-php-2-0-0/',
         description: 'Framework backend desenvolvido por mim, de código aberto, disponível no GITHUB',
-        tag: '#PHP #MVC #GULP'
+        tag: ['PHP', 'MVC', 'GULP']
     },
     {
         link_title: 'Open Source Adventure',
         link: 'https://github.com/winterjeferson/open-source-adventure/',
         description: 'Jogo de código aberto, disponível no GITHUB',
-        tag: '#SCSS #JAVSCRIPT #GULP #HTML'
+        tag: ['SCSS', 'JAVSCRIPT', 'GULP', 'HTML']
     }
 ] %}
 {% for item in arr %}
 <ul class="list">
     <li><a href="{{item.link}}" target="_blank" class="link link--blue">{{item.link_title}}</a></li>
     <li>{{item.description}}.</li>
-    <li>{{item.tag}}</li>
+    <li>
+        <div class="row tag-wrapper">
+            {% for tag in item.tag %}
+            <div class="tag tag--grey tag--extra-small">
+                <span class="tag__text">#{{tag}}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </li>
 </ul>
 {% endfor %}

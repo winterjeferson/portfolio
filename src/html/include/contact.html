@@ -13,7 +13,7 @@
         <textarea class="form__fill" name="message" aria-label="Sua mensagem"></textarea>
     </div>
     <div class="row form__field right">
-        <input type="submit" class="button button--regular button--regular--proportional button--white" value="Enviar">
+        <input type="submit" class="button button--regular button--regular--proportional button--blue" value="Enviar">
     </div>
 </form>
 {% set arr = [
@@ -36,7 +36,7 @@
 ] %}
 <div class="button-wrapper social right">
     {% for item in arr %}
-    <a href="{{item.link}}" target="_blank" class="button button--regular button--regular--proportional button--white">
+    <a href="{{item.link}}" rel="noopener" target="_blank" class="button button--regular button--regular--proportional button--white">
         <svg class="icon icon--regular icon--grey">
             <use xlink:href="./assets/img/icon.svg#{{item.image}}"></use>
         </svg>
