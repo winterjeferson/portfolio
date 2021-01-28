@@ -2,7 +2,7 @@ const allFile = '*.*';
 
 module.exports = {
     src: `src/`,
-    dist: `dist/`,
+    dist: `docs/`,
     theme: 'theme',
     plugin: 'plugin',
     index: 'index',
