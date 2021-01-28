@@ -89,6 +89,10 @@ body {
     margin-bottom: $big;
     padding: 0 $big $big;
 
+    &:last-child {
+        border-bottom: 0;
+    }
+
     li {
         line-height: 150%;
     }
