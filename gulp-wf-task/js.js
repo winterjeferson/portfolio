@@ -13,7 +13,6 @@ const folder = `${configuration.src}${extension}/`;
 const file = [
     `${folder}${filePrefix}/!(${configuration.index})*.${extension}`,
     `${folder}${filePrefix}/${configuration.index}.${extension}`,
-
 ];
 const filePlugin = [
     `${folder}${filePrefixPlugin}/!(${configuration.index})*.${extension}`,

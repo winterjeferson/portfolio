@@ -34,11 +34,16 @@ body {
             }
         }
 
+        .footnotes,
         .title,
         .subtitle {
             color: $color-black-light-4;
-            text-align: center;
             width: 100%;
+        }
+
+        .title,
+        .subtitle {
+            text-align: center;
         }
 
         .title {
@@ -49,6 +54,11 @@ body {
         .subtitle {
             font-size: $font-size-regular;
             margin-top: -1rem;
+        }
+
+        .footnotes {
+            font-size: $font-size-small;
+            margin-top: 3rem;
         }
     }
 
