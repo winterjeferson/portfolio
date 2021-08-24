@@ -138,3 +138,9 @@ body {
 .button--white {
     border-color: $color-grey;
 }
+
+.tag__text {
+    * {
+        font-size: inherit;
+    }
+}

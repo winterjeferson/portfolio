@@ -4,7 +4,7 @@
         link_title: 'October 31',
         link: 'https://www.october31.com.br/',
         description: 'Jogo de RPG grátis multiplataforma, que roda diretamente em seu navegador. Você poderá jogar em seu computador, tablet, smartphone ou smart TV sem instalar nada. O jogo conta com gráficos, roteiro e trilha sonora autoral',
-        tag: ['SCSS', 'JAVSCRIPT', 'JQUERY', 'PHP', 'MYSQL', 'GULP']
+        tag: ['SCSS', 'JAVSCRIPT', '<s>JQUERY</s>', 'PHP', 'MYSQL', 'GULP']
     },
     {
         link_title: 'Winter Front',
@@ -33,7 +33,7 @@
         <div class="row tag-wrapper">
             {% for tag in item.tag %}
             <div class="tag tag--grey tag--extra-small">
-                <span class="tag__text">#{{tag}}</span>
+                <span class="tag__text">#{{tag | safe}}</span>
             </div>
             {% endfor %}
         </div>
