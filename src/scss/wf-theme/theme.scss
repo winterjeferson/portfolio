@@ -69,7 +69,7 @@ body {
 
     &__content-dark,
     &__content-light {
-        padding: $extra-big;
+        padding: $big + $regular;
     }
 }
 
@@ -89,7 +89,9 @@ body {
     }
 
     p {
-        padding: 0 $big;
+        @include tablet-landscape {
+            padding: 0 $big;
+        }
     }
 }
 
@@ -97,7 +99,11 @@ body {
     border-bottom: 1px dotted $color-grey-light-2;
     list-style: none;
     margin-bottom: $big;
-    padding: 0 $big $big;
+    padding: 0 0 $big;
+
+    @include tablet-landscape {
+        padding: 0 $big $big;
+    }
 
     &:last-child {
         border-bottom: 0;
@@ -128,7 +134,11 @@ body {
 
 .form,
 .social {
-    padding: 0 $big $big;
+    padding: 0;
+
+    @include tablet-landscape {
+        padding: 0 $big $big;
+    }
 }
 
 .social {
