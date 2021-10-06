@@ -3,19 +3,19 @@
     {
         company: 'Nèscara',
         position: 'Programador IV',
-        about: 'Programador',
+        about: 'Diagramação e codificação de e-commerce na plataforma: <i>Salesforce</i>',
         date: 'Setembro de 2021(emprego atual)'
     },
     {
         company: 'Arezzo&Co',
         position: 'Analista Frontend III',
-        about: 'Diagramação e codificação de e-commerce',
+        about: 'Diagramação e codificação de e-commerce na plataforma: <i>SAP Hybris</i>',
         date: 'Julho de 2020 a Setembro de 2021'
     },
     {
         company: 'BR Supply',
         position: 'Supervisor de Web Designer',
-        about: 'Diagramação e codificação de Web Sites, e-commerce, sistemas, e-mail marketing (frontend e backend)',
+        about: 'Diagramação e codificação de Web Sites, e-commerce (plataforma <i>Linx</i>), sistemas, e-mail marketing (frontend e backend)',
         date: 'Janeiro de 2019 a Junho de 2020'
     },
     {
@@ -41,7 +41,7 @@
 <ul class="list">
     <li><strong>{{item.company}}.</strong></li>
     <li><i>{{item.position}}.</i></li>
-    <li>{{item.about}}.</li>
+    <li>{{item.about | safe}}.</li>
     <li><small>{{item.date}}.</small></li>
 </ul>
 {% endfor %}
