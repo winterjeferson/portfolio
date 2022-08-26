@@ -1,4 +1,4 @@
-class Helper {
+export class Helper {
     getUrlParameter(target) {
         const url = top.location.search.substring(1);
         const parameter = url.split('&');
@@ -46,7 +46,3 @@ class Helper {
         wrapper.appendChild(target);
     }
 }
-
-export {
-    Helper
-};

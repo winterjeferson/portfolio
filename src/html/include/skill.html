@@ -1,5 +1,4 @@
-<h2 class="title">Softwares</h2>
-{% set arr = [
+{% set softwares = [
     {
         title: 'Photoshop',
         color: 'blue',
@@ -16,18 +15,7 @@
         size: '100'
     }
 ] %}
-{% for item in arr %}
-<div class="skill row">
-    <span>{{item.title}}</span>
-    <div class="progress progress--small progress--{{item.color}}">
-        <div class="progress__bar" style="width:{{item.size}}%"></div>
-    </div>
-</div>
-{% endfor %}
-
-
-<h2 class="title">Desenvolvimento web</h2>
-{% set arr = [
+{% set developments = [
     {
         title: 'HTML',
         color: 'green',
@@ -35,23 +23,18 @@
     },
     {
         title: 'SEO',
-        color: 'red',
+        color: 'green-light',
         size: '70'
     },
     {
-        title: 'Nunjucks',
-        color: 'red',
-        size: '70'
-    },
-    {
-        title: 'Pug',
-        color: 'red',
-        size: '30'
+        title: 'Nunjucks / Pug',
+        color: 'green-light',
+        size: '60'
     },
     {
         title: 'UX / UI',
-        color: 'red',
-        size: '70'
+        color: 'green-light',
+        size: '80'
     },
     {
         title: 'CSS / SASS / SCSS / Stylus',
@@ -60,8 +43,8 @@
     },
     {
         title: 'Bootstrap',
-        color: 'red',
-        size: '70'
+        color: 'green-light',
+        size: '60'
     },
     {
         title: 'Javascript',
@@ -70,32 +53,32 @@
     },
     {
         title: 'JQuery',
-        color: 'red',
+        color: 'green-light',
         size: '100'
     },
     {
         title: 'Angular',
-        color: 'red',
+        color: 'green-light',
         size: '10'
     },
     {
         title: 'Vue',
-        color: 'red',
+        color: 'green-light',
         size: '10'
     },
     {
         title: 'React',
-        color: 'red',
+        color: 'green-light',
         size: '30'
     },
     {
         title: 'Typescript',
-        color: 'red',
+        color: 'green-light',
         size: '10'
     },
     {
         title: 'Gulp / Grunt',
-        color: 'red',
+        color: 'green-light',
         size: '70'
     },
     {
@@ -114,33 +97,17 @@
         size: '10'
     },
     {
-        title: 'JSP',
-        color: 'green',
-        size: '20'
-    },
-    {
-        title: 'Hybris',
+        title: 'Hybris / JSP',
         color: 'green',
         size: '20'
     },
     {
         title: 'Salesforce',
         color: 'green',
-        size: '10'
+        size: '40'
     }
 ] %}
-{% for item in arr %}
-<div class="skill row">
-    <span>{{item.title}}</span>
-    <div class="progress progress--small progress--{{item.color}}">
-        <div class="progress__bar" style="width:{{item.size}}%"></div>
-    </div>
-</div>
-{% endfor %}
-
-
-<h2 class="title">Inglês</h2>
-{% set arr = [
+{% set english = [
     {
         title: 'Leitura / Escrita',
         color: 'yellow',
@@ -149,15 +116,38 @@
     {
         title: 'Conversação',
         color: 'yellow',
-        size: '40'
+        size: '50'
     }
 ] %}
-{% for item in arr %}
+
+<h2 class="title">Softwares</h2>
+{% for item in softwares %}
 <div class="skill row">
     <span>{{item.title}}</span>
     <div class="progress progress--small progress--{{item.color}}">
-        <div class="progress__bar" style="width:{{item.size}}%"></div>
+        <div class="progress__bar" data-width-current="0" data-width="{{item.size}}"></div>
     </div>
 </div>
 {% endfor %}
+
+<h2 class="title">Desenvolvimento web</h2>
+{% for item in developments %}
+<div class="skill row">
+    <span>{{item.title}}</span>
+    <div class="progress progress--small progress--{{item.color}}">
+        <div class="progress__bar" data-width-current="0" data-width="{{item.size}}"></div>
+    </div>
+</div>
+{% endfor %}
+
+<h2 class="title">Inglês</h2>
+{% for item in english %}
+<div class="skill row">
+    <span>{{item.title}}</span>
+    <div class="progress progress--small progress--{{item.color}}">
+        <div class="progress__bar" data-width-current="0" data-width="{{item.size}}"></div>
+    </div>
+</div>
+{% endfor %}
+
 <p class="footnotes">ps.: Habilidades mensuradas em anos de experiência</p>

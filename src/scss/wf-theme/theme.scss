@@ -1,7 +1,33 @@
+$font-family: 'Roboto',
+sans-serif;
+
+@keyframes animation--bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(-30px);
+    }
+
+    60% {
+        transform: translateX(-15px);
+    }
+}
+
+.animation--bounce {
+    animation: animation--bounce 1s infinite;
+}
+
 body {
     background: repeating-linear-gradient(90deg, #bec3c7, #b0b6bb 2px, #bec3c7 4px, #b0b6bb 8px);
     color: $color-black;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family;
 }
 
 .grid {
@@ -82,7 +108,7 @@ body {
 
     .title {
         background-color: $color-grey;
-        color: $color-black;
+        color: $color-grey-dark-8;
         font-size: $font-size-extra-big;
         font-weight: bold;
         padding: $big;
@@ -122,6 +148,16 @@ body {
     .progress {
         background-color: $color-black-light-2;
         box-shadow: none;
+
+        &__bar {
+            width: 0;
+        }
+
+        &--green-light {
+            .progress__bar {
+                background-color: $color-green-light-6;
+            }
+        }
     }
 
     .skill {
@@ -138,6 +174,12 @@ body {
 
     @include tablet-landscape {
         padding: 0 $big $big;
+    }
+}
+
+.form {
+    .form__fill {
+        font-family: $font-family;
     }
 }
 

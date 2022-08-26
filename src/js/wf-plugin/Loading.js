@@ -1,4 +1,4 @@
-class LoadingMain {
+export class LoadingMain {
     constructor() {
         this.cssHide = 'hide';
         this.cssAnimation = 'animate';
@@ -14,7 +14,3 @@ class LoadingMain {
         this.elBody.style.overflow = 'auto';
     }
 }
-
-export {
-    LoadingMain
-};

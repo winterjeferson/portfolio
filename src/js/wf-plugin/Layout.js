@@ -1,4 +1,4 @@
-class Layout {
+export class Layout {
     constructor() {
         this.breakPointExtraSmall = 0;
         this.breakPointSmall = 576;
@@ -8,7 +8,3 @@ class Layout {
         this.breakPointFullHd = 1920;
     }
 }
-
-export {
-    Layout
-};
