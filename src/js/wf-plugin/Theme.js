@@ -1,13 +1,13 @@
 export class Theme {
     init() {
-        setInterval(this.buildSkill, 200);
+        setInterval(this.buildSkill, 80);
     }
 
     buildSkill() {
         const attribute = 'data-width';
         const elWrapper = document.querySelector('.grid__content-dark').querySelectorAll(`[${attribute}]`);
         const attributeCurrent = attribute + '-current';
-        const encrease = 5;
+        const encrease = 3;
         const decrease = 7;
 
         elWrapper.forEach(el => {
@@ -22,7 +22,7 @@ export class Theme {
 
             if (valueCurrent < valueMax) {
                 el.setAttribute(attributeCurrent, valueCurrent);
-                el.setAttribute('style', `width: ${valueCurrent}%`);
+                el.setAttribute('style', `transform: scaleX(${valueCurrent}%) translate(0, 0)`);
             }
         });
     }

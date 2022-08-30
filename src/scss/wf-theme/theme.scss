@@ -150,7 +150,8 @@ body {
         box-shadow: none;
 
         &__bar {
-            width: 0;
+            transform-origin: top left;
+            width: 100%;
         }
 
         &--green-light {
