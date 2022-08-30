@@ -32,7 +32,7 @@
 ] %}
 <div class="button-wrapper social right">
     {% for item in arr %}
-    <a href="{{item.link}}" rel="noopener" target="_blank" class="button button--regular button--regular--proportional button--white">
+    <a href="{{item.link}}" rel="noopener" title="{{item.image}}" target="_blank" class="button button--regular button--regular--proportional button--white">
         <svg class="icon icon--regular icon--grey">
             <use xlink:href="./assets/img/icon.svg#{{item.image}}"></use>
         </svg>

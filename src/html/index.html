@@ -5,15 +5,15 @@
 {% include "include/head.html" %}
 {% include "include/loading-main.html" %}
 <div class="grid">
-    <aside class="grid__content-dark">
+    <section class="grid__content-dark">
         <article class="row photo">
             {% include "include/photo.html" %}
         </article>
         <article class="row skill-wrapper">
             {% include "include/skill.html" %}
         </article>
-    </aside>
-    <section class="grid__content-light">
+    </section>
+    <main class="grid__content-light">
         <article class="article">
             {% include "include/about.html" %}
         </article>
@@ -26,6 +26,6 @@
         <article class="article">
             {% include "include/contact.html" %}
         </article>
-    </section>
+    </main>
 </div>
 {% include "include/footer.html" %}
