@@ -24,6 +24,7 @@ sans-serif;
     animation: animation--bounce 1s infinite;
 }
 
+html,
 body {
     background: repeating-linear-gradient(90deg, #bec3c7, #b0b6bb 2px, #bec3c7 4px, #b0b6bb 8px);
     color: $color-black;
@@ -34,10 +35,10 @@ body {
     display: grid;
     grid-template: "content-dark"auto "content-light"auto;
     height: 100%;
-    padding: $big;
 
     @include tablet-landscape {
         grid-template: "content-dark content-light"auto;
+        padding: $big;
     }
 
     &__content-dark {
@@ -50,8 +51,17 @@ body {
         }
 
         .image {
+            $size: 300px;
+
+            @include tablet-landscape {
+                $size: 240px;
+            }
+
             border-radius: 50%;
+            height: $size;
             margin: auto;
+            max-width: 100%;
+            width: $size;
         }
 
         .photo {
@@ -63,7 +73,7 @@ body {
         .footnotes,
         .title,
         .subtitle {
-            color: $color-black-light-4;
+            color: $color-black-light-6;
             width: 100%;
         }
 
@@ -73,7 +83,7 @@ body {
         }
 
         .title {
-            font-size: $font-size-big;
+            font-size: $font-size-big - 2;
             font-weight: bold;
         }
 
@@ -95,7 +105,11 @@ body {
 
     &__content-dark,
     &__content-light {
-        padding: $big + $regular;
+        padding: $big;
+
+        @include tablet-landscape {
+            padding: $big + $regular;
+        }
     }
 }
 
