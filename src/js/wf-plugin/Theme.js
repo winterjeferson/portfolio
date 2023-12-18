@@ -7,8 +7,8 @@ export class Theme {
         const attribute = 'data-width';
         const elWrapper = document.querySelector('.grid__content-dark').querySelectorAll(`[${attribute}]`);
         const attributeCurrent = attribute + '-current';
-        const encrease = 3;
-        const decrease = 7;
+        const encrease = 2;
+        const decrease = 15;
 
         elWrapper.forEach(el => {
             const valueMax = Number(el.getAttribute(attribute));
